@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+    - master
+
+
+  jobs:   
+    build:
+      runs-on: ubuntu-22.04
+			permistions:
+	 			packages: write
+		 
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v3
+					
+		 		- name: Login To container repository
+		 			uses: docker/login-action@v2
+					with:
+		 				registry: ghcr.io
+			 			username: ${{ github.actor }}
+			 			password: ${{ secret.GITHUB_TOKEN}}
+
+        - name: Build Project 
+          uses: docker/build-push-action@v4
+          with:
+					  # ghcr.io/jagoum/mk-docks: latest
+            tag: |
+              ghcr.io/${{github.repository }}:latest
+							ghcr.io/${{github.repository }}:ghcr.io/${{github.run_number }}
+			 
+            
