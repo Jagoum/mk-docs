@@ -1,3 +1,4 @@
+name: Mk-docks Automation build and deploy
 on:
 	push:
     branches:
