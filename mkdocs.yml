@@ -1,11 +1,11 @@
 # Project information
 site_name: My MkDocs Project
-site_description: 'An example MkDocs project using the Material theme'
-site_url: 'https://Jagoum.github.io/mk-docs'  # Change this to your site's URL
+site_description: "An example MkDocs project using the Material theme"
+site_url: "https://Jagoum.github.io/mk-docs" # Change this to your site's URL
 
 # Theme settings
 theme:
-  name: material
+  name: bootstrap
 
 # Navbar settings (site structure)
 nav:

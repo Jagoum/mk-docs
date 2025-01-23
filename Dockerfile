@@ -9,7 +9,8 @@ WORKDIR /app
 RUN apt update
 
 #Installing depencies
-RUN apt install  mkdocs -y && apt install mkdocs-bootstrap -y
+RUN apt install  mkdocs -y && \
+    apt install  mkdocs-bootstrap -y
 
 #copy te orihect files into the container
 COPY . .
