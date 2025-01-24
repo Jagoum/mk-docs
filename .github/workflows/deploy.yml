@@ -26,12 +26,12 @@ jobs:
       # Install dependencies (MkDocs and Material theme)
       - name: Install dependencies
         run: |
-          pip install mkdocs-material
+          sudo apt install mkdocs-bootstrap
 
       # Build and deploy the site to GitHub Pages
       - name: Deploy to GitHub Pages          
         run: |
-          # sed -i -E "s/your-username/${{github.repository_owner}}/g" ./README.md
+          # sed -i -E "s/jagoum/${{github.repository_owner}}/g" ./README.md
           # sed -i -E "s/my-mkdocs-project/${{github.repository}}/g" ./README.md
           git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/jagoum/mk-docs.git
       
