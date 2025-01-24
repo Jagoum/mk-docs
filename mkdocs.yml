@@ -1,11 +1,11 @@
 # Project information
 site_name: My MkDocs Project
 site_description: "An example MkDocs project using the Material theme"
-site_url: "https://Jagoum.github.io/mk-docs" # Change this to your site's URL
+site_url: "https://jagoum.github.io/mk-docs" # Change this to your site's URL
 
 # Theme settings
 theme:
-  name: material
+  name: bootstrap
 
 # Navbar settings (site structure)
 nav:
@@ -23,5 +23,5 @@ markdown_extensions:
 
 # Repository configuration (for the edit link on pages)
 repo_name: Jagoum/mk-docs
-repo_url: https://github.com/Jagoum/mk-docs
+repo_url: https://github.com/jagoum/mk-docs
 edit_uri: edit/main/docs/

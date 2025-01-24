@@ -1,6 +1,6 @@
 # use the official pthon image as a base image
 FROM nginx AS builder
-
+#FROM python:3.9-slim AS builder
 
 #the working directory is /app
 

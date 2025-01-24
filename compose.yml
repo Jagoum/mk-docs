@@ -3,7 +3,7 @@ services:
     build: 
       context: .
       dockerfile: ./Dockerfile
-    container_name: mydocs
+    container_name: mkdocs
     ports:
       - "8080:80"
     networks: 
