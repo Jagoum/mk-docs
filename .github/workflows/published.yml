@@ -26,8 +26,9 @@ jobs:
         uses: docker/build-push-action@v4
         with:
 					  # ghcr.io/jagoum/mk-docks: latest
-            tag: |
-              ghcr.io/${{github.repository }}:latest
-							ghcr.io/${{github.repository }}:${{github.run_number }}
+			 		push: true
+          tag: |
+            ghcr.io/${{github.repository }}:latest
+						ghcr.io/${{github.repository }}:${{github.run_number }}
 			 
             
