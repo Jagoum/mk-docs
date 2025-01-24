@@ -1,32 +1,34 @@
-name: Mk-docks Automation build and deploy
+name: Automation 1
 on:
   push:
     branches:
-    - master
-
-jobs:
+      master
+jobs: 
   build:
-   runs-on: ubuntu-22.04
-   permistions:
-   packages: write
+    runs-on: ubuntu-22.04
+    permissions:
+     packages: write 
 
-  steps:
-
-      - name: checkout code
+    steps:
+        # Checkout the repository code
+       
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Login to Container Registry
+       
+      - name: Logn to Container registry
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN}}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
+       
       - name: Build Project
         uses: docker/build-push-action@v4
         with:
-  # ghcr.io/jagoum/mk-docks: latest
+          context: .
           push: true
-          tag: |
-            ghcr.io/${{github.repository }}:latest
-            ghcr.io/${{github.repository }}:${{github.run_number }
+          tags: | 
+            ghcr.io/${{ vars.REPOSITORY }}:latest
+            ghcr.io/${{ vars.REPOSITORY }}:${{ github.run_number }}
