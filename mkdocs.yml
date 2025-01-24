@@ -5,7 +5,7 @@ site_url: "https://Jagoum.github.io/mk-docs" # Change this to your site's URL
 
 # Theme settings
 theme:
-  name: bootstrap
+  name: material
 
 # Navbar settings (site structure)
 nav:
