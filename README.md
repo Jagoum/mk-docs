@@ -54,3 +54,5 @@ To run the project locally and preview the documentation:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+				This Project is for GIS Students. This is Richmonds own work
