@@ -11,7 +11,7 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Sample: Sample.md
+  - Docker: DK.md
   - Mulipass: multipass.md
 
 # Extra settings
