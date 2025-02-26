@@ -8,7 +8,8 @@ on:
       
 permissions:
   contents: write
-
+  packages: write
+  
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
