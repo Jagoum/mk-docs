@@ -4,6 +4,10 @@ on:
   pull_request:
     types:
       - closed
+      - opened
+      
+permissions:
+  contents: write
 
 jobs:
   if_merged:
