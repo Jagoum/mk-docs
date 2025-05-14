@@ -8,7 +8,7 @@ services:
       - "8080:80"
     networks: 
       - mkdocs_network
-    #volumes: 
+   # volumes: 
      # - ./site:/usr/share/nginx/html
 
 networks: 

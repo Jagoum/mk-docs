@@ -18,6 +18,8 @@ COPY . .
 # build the project
 RUN mkdocs build
 
+EXPOSE 80
+
 FROM nginx:alpine
 
 #copy project build code to nginx server
